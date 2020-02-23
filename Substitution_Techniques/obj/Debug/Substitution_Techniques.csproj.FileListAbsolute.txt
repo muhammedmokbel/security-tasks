@@ -1,0 +1,8 @@
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\bin\Debug\Substitution_Techniques.exe
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\bin\Debug\Substitution_Techniques.pdb
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.exe
+c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.pdb
