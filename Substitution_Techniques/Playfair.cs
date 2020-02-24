@@ -103,91 +103,91 @@ namespace Substitution_Techniques
 
           return encrptemessage;
       }
-      public string decrypt(string encrptemessage, string key)
-      {
-          constructmatrix(key);
+        public string decrypt(string encrptemessage, string key)
+        {
+            constructmatrix(key);
 
-          encrptemessage = encrptemessage.ToUpper();
-         string decrptmessage = ""; 
-          for (int i = 0; i < encrptemessage.Length; i+=2)
-          {
-              int rowfirst = 0, colfirst = 0, rowsecond = 0, colsecond = 0;
-              char x = encrptemessage[i];
-              char y = encrptemessage[i + 1]; 
-              // detect the postion of first element in matrix
-              for (int j = 0; j < 5; j++)
-              {
+            encrptemessage = encrptemessage.ToUpper();
+            string decrptmessage = "";
+            for (int i = 0; i < encrptemessage.Length; i += 2)
+            {
+                int rowfirst = 0, colfirst = 0, rowsecond = 0, colsecond = 0;
+                char x = encrptemessage[i];
+                char y = encrptemessage[i + 1];
+                // detect the postion of first element in matrix
+                for (int j = 0; j < 5; j++)
+                {
 
-                  for (int k = 0; k < 5; k++)
-                  {
-                      if (mykeymatrix[j, k] == x)
-                      {
-                          rowfirst = j;
-                          colfirst = k;
-                          break;
-                      }
-                  }
-              }
-              // detect the postion of second element in matrix
+                    for (int k = 0; k < 5; k++)
+                    {
+                        if (mykeymatrix[j, k] == x)
+                        {
+                            rowfirst = j;
+                            colfirst = k;
+                            break;
+                        }
+                    }
+                }
+                // detect the postion of second element in matrix
 
-              for (int j = 0; j < 5; j++)
-              {
+                for (int j = 0; j < 5; j++)
+                {
 
-                  for (int k = 0; k < 5; k++)
-                  {
-                      if (mykeymatrix[j, k] == y)
-                      {
-                          rowsecond = j;
-                          colsecond = k;
-                          break;
-                      }
-                  }
-              }
+                    for (int k = 0; k < 5; k++)
+                    {
+                        if (mykeymatrix[j, k] == y)
+                        {
+                            rowsecond = j;
+                            colsecond = k;
+                            break;
+                        }
+                    }
+                }
 
-              // first case : if there are in same row 
-              if (rowfirst == rowsecond)
-              {
+                // first case : if there are in same row 
+                if (rowfirst == rowsecond)
+                {
 
-                  if(colfirst-1<0)
-                      decrptmessage += mykeymatrix[rowfirst, 4];
-                  else
-                      decrptmessage += mykeymatrix[rowfirst, colfirst - 1];
+                    if (colfirst - 1 < 0)
+                        decrptmessage += mykeymatrix[rowfirst, 4];
+                    else
+                        decrptmessage += mykeymatrix[rowfirst, colfirst - 1];
 
-                  if (colsecond - 1 < 0)
-                      decrptmessage += mykeymatrix[rowfirst, 4];
-                  else
-                      decrptmessage += mykeymatrix[rowfirst, colsecond - 1];
+                    if (colsecond - 1 < 0)
+                        decrptmessage += mykeymatrix[rowfirst, 4];
+                    else
+                        decrptmessage += mykeymatrix[rowfirst, colsecond - 1];
 
-              }
-              //second case : if there are in same col 
-              else if (colfirst == colsecond)
-              {
+                }
+                //second case : if there are in same col 
+                else if (colfirst == colsecond)
+                {
 
-                  if (rowfirst - 1 < 0)
-                      decrptmessage += mykeymatrix[4, colfirst];
-                  else
-                      decrptmessage += mykeymatrix[rowfirst - 1, colfirst];
+                    if (rowfirst - 1 < 0)
+                        decrptmessage += mykeymatrix[4, colfirst];
+                    else
+                        decrptmessage += mykeymatrix[rowfirst - 1, colfirst];
 
-                  if (rowsecond - 1 < 0)
-                      decrptmessage += mykeymatrix[4, colfirst];
-                  else
-                      decrptmessage += mykeymatrix[rowsecond - 1, colfirst]; 
+                    if (rowsecond - 1 < 0)
+                        decrptmessage += mykeymatrix[4, colfirst];
+                    else
+                        decrptmessage += mykeymatrix[rowsecond - 1, colfirst];
 
-              }
+                }
 
-             // third case : if there are in diffrent rows and cols 
+                // third case : if there are in diffrent rows and cols 
 
-              else
-              {
-                  decrptmessage += mykeymatrix[rowfirst, colsecond];
-                  decrptmessage += mykeymatrix[rowsecond, colfirst]; 
-              }
-          }
+                else
+                {
+                    decrptmessage += mykeymatrix[rowfirst, colsecond];
+                    decrptmessage += mykeymatrix[rowsecond, colfirst];
+                }
+            }
 
 
-          MessageBox.Show(decrptmessage); 
-              return decrptmessage; 
-      }
+            MessageBox.Show(decrptmessage);
+            return decrptmessage;
+        }
 
       void constructmatrix(string key)
       {
