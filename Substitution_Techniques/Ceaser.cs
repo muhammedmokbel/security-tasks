@@ -11,41 +11,41 @@ namespace Substitution_Techniques
 {
     public class Ceaser
     {
-       
+
         Dictionary<char, int> lower_alphabet;
         Dictionary<char, int> upper_alphabet;
         List<char> map_lower;
-        List<char> map_upper; 
-        int mykey; 
-       public Ceaser()
+        List<char> map_upper;
+        int mykey;
+        public Ceaser()
         {
 
             lower_alphabet = new Dictionary<char, int>();
             upper_alphabet = new Dictionary<char, int>();
             map_lower = new List<char>();
             map_upper = new List<char>();
-            mykey = 8; 
-           int index = 0; 
+            mykey = 8;
+            int index = 0;
             for (char i = 'a'; i <= 'z'; i++)
             {
                 lower_alphabet[i] = index;
-                map_lower.Add(i); 
-                index++; 
+                map_lower.Add(i);
+                index++;
             }
-            index = 0; 
-           for (char i = 'A'; i <= 'Z'; i++)
+            index = 0;
+            for (char i = 'A'; i <= 'Z'; i++)
             {
                 upper_alphabet[i] = index;
-                map_upper.Add(i); 
+                map_upper.Add(i);
                 index++;
             }
 
-               
+
         }
-        public string encrypt(string message ,int key)
+        public string encrypt(string message, int key)
         {
             string encrptedmessage = "";
-            mykey = key; 
+            mykey = key;
             for (int i = 0; i < message.Length; i++)
             {
                 if (message.ElementAt(i) >= 97)
@@ -63,14 +63,12 @@ namespace Substitution_Techniques
                     encrptedmessage += map_upper.ElementAt(temp);
                 }
             }
-            return encrptedmessage; 
+            return encrptedmessage;
         }
 
         public string decrypt(string encrptedmassage, int key)
         {
             string message = "";
-
-
             for (int i = 0; i < encrptedmassage.Length; i++)
             {
                 int temp = upper_alphabet[encrptedmassage.ElementAt(i)];
@@ -79,19 +77,17 @@ namespace Substitution_Techniques
                     if ((j + key) % 26 == temp)
                     {
                         message += map_lower.ElementAt(j);
-                        break; 
+                        break;
                     }
                 }
             }
-          
 
-            return message; 
+
+            return message;
         }
 
         public int Analyse(string message, string encrptedmassage)
         {
-           
-
             for (int i = 0; i < 26; i++)
             {
 
@@ -116,12 +112,10 @@ namespace Substitution_Techniques
                 }
             }
 
-            return mykey; 
-            
-                
+            return mykey;
+
+
         }
-
-
     }
     
 }

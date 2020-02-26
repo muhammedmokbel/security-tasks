@@ -6,3 +6,12 @@ c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Subs
 c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.csproj.GenerateResource.Cache
 c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.exe
 c:\users\user\documents\visual studio 2012\Projects\Substitution_Techniques\Substitution_Techniques\obj\Debug\Substitution_Techniques.pdb
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\bin\Debug\Substitution_Techniques.exe
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\bin\Debug\Substitution_Techniques.pdb
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.csprojAssemblyReference.cache
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.Form1.resources
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.Properties.Resources.resources
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.csproj.GenerateResource.cache
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.csproj.CoreCompileInputs.cache
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.exe
+E:\ASCIS\4th Year\Security\security-tasks\Substitution_Techniques\obj\Debug\Substitution_Techniques.pdb
