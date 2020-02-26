@@ -18,19 +18,18 @@ namespace Substitution_Techniques
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ceaser firstalgo = new Ceaser();
+            /*Ceaser firstalgo = new Ceaser();
             string temp = firstalgo.encrypt(textBox1.Text, 29);
-
-            //MessageBox.Show(temp);
+            MessageBox.Show(temp);
             string temp2 = firstalgo.decrypt(temp, 29);
             //MessageBox.Show(temp2);
             int key = firstalgo.Analyse(temp2, temp);
-            //MessageBox.Show(key.ToString());
+            //MessageBox.Show(key.ToString());*/
 
             Playfair secondalgo = new Playfair();
-          string dec =   secondalgo.encrypt(textBox1.Text, "playfairexample");
-          
-          secondalgo.decrypt(dec, "playfairexample"); 
+            string dec = secondalgo.encrypt(textBox1.Text, "helloworld");
+            MessageBox.Show(dec);
+            MessageBox.Show(secondalgo.decrypt(dec, "helloworld"));
 
         }
     }
